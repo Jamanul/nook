@@ -1,0 +1,22 @@
+.rose {
+    font-family: 'Roslindale', sans-serif;
+    
+}
+
+  .demo-holder {
+   position: relative;
+   height: 1000px;
+   width: 500;
+    background: #000;
+  }
+
+  .image {
+    width: 300px;
+    height: 300px;
+    mask-image: linear-gradient(to right, black 125px, transparent 50px, black 125px);
+    -webkit-mask-image: linear-gradient(to right, black 125px, transparent 50px, black 125px);
+  }
+  
+  
+  
+  
