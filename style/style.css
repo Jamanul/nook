@@ -1,22 +1,95 @@
 .rose {
-    font-family: 'Roslindale', sans-serif;
-    
+  font-family: "Roslindale", sans-serif;
 }
 
-  .demo-holder {
-   position: relative;
-   height: 1000px;
-   width: 500;
-    background: #000;
-  }
+* {
+  margin: 0px;
+  padding: 0px;
+}
 
-  .image {
-    width: 300px;
-    height: 300px;
-    mask-image: linear-gradient(to right, black 125px, transparent 50px, black 125px);
-    -webkit-mask-image: linear-gradient(to right, black 125px, transparent 50px, black 125px);
-  }
-  
-  
-  
-  
+img {
+  width: 100%;
+}
+.vector-container {
+  max-width: 1440px;
+  padding: 0px 70px;
+  margin: 0px auto;
+}
+
+/* nav section */
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 24px;
+  background: #FAFAFA;
+}
+
+.nav-svg {
+  padding: 18px 12px;
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  gap: 6px;
+  flex-direction: column;
+}
+
+.nav-end {
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  gap: 24px;
+}
+/* hero section */
+
+.hero {
+  padding-top: 53px;
+  position: relative;
+  background: #FAFAFA;
+}
+
+.hero-title {
+  color: #303635;
+  text-align: center;
+  font-family: "Roslindale", sans-serif;
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 130%;
+}
+
+.hero-title-span {
+  display: block;
+}
+.hero-dsc-span {
+  display: block;
+}
+
+.hero-description {
+  color: #5f6060;
+  text-align: center;
+  font-family: Inter;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+  margin-top: 40px;
+}
+
+.hero-image-container {
+    display: flex;
+    gap: 81px;
+    z-index: 101;
+    position: relative;
+    margin-top: 52px;
+}
+
+.big-svg {
+    position: absolute;
+    top: 5%;
+    z-index: 01;
+}
+.middle-image-div {
+    position: relative;
+}

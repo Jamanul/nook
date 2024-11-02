@@ -1,5 +1,0 @@
-alert('hello')
-
-function addevent () {
-    
-}
