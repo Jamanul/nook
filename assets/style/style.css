@@ -1,16 +1,31 @@
+/* *,::after,::before{
+  border: 1px solid red;
+} */
 body {
   font-family: "Roslindale", sans-serif;
 }
-
 .flex {
   display: flex;
 }
-
+.flex-column {
+  flex-direction: column;
+}
+.items-center {
+  align-items: center;
+}
+.justify-between {
+  justify-content: space-between;
+}
+.inter {
+  font-family: Inter;
+}
+.relative {
+  position: relative;
+}
 * {
   margin: 0px;
   padding: 0px;
 }
-
 img {
   width: 100%;
 }
@@ -18,30 +33,32 @@ img {
   max-width: 1300px;
   margin: 0px auto;
 }
-
+.inherit-width {
+  width: fit-content;
+}
+.absolute {
+  position: absolute;
+}
 .primary-bg {
   background: #fafafa;
 }
+.secondary-bg {
+  background: #02494b;
+}
 
 /* nav section */
-
 .nav {
-  align-items: center;
   justify-content: space-between;
   padding-top: 24px;
 }
-
 .nav-svg {
   padding: 18px 12px;
   justify-items: center;
-  align-items: center;
   gap: 6px;
   flex-direction: column;
 }
-
 .nav-end {
   justify-items: center;
-  align-items: center;
   gap: 24px;
 }
 /* hero section */
@@ -56,24 +73,14 @@ img {
   color: #303635;
   text-align: center;
   font-size: 64px;
-  font-style: normal;
   font-weight: 500;
   line-height: 130%;
-}
-
-.hero-title-span {
-  display: block;
-}
-.hero-dsc-span {
-  display: block;
 }
 
 .hero-description {
   color: #5f6060;
   text-align: center;
-  font-family: Inter;
   font-size: 18px;
-  font-style: normal;
   font-weight: 400;
   line-height: 120%;
   margin-top: 40px;
@@ -100,7 +107,6 @@ img {
 
 .hero-vector {
   justify-content: center;
-  align-items: center;
   position: absolute;
   top: -19.5%;
   width: 100%;
@@ -114,7 +120,6 @@ img {
 .hero-img-title {
   color: var(--TextColor-1, #303635);
   font-size: 20px;
-  font-style: normal;
   font-weight: 400;
   line-height: 29px;
 }
@@ -130,27 +135,17 @@ img {
   border: var(--TextColor-1, #303635) solid 1px;
   border-radius: 9999px;
 }
-.hero-img-title > span {
-  display: block;
-}
 
 .hero-right-img-title {
   color: var(--TextColor-1, #303635);
   font-size: 24px;
-  font-style: normal;
   font-weight: 400;
   line-height: 32px; /* 133.333% */
 }
-
-.hero-right-img-title > span {
-  display: block;
-}
-
 .slider-conatiner {
   background: #fff;
   border-bottom: 1px solid #6d7373;
 }
-
 .slider {
   animation: slide 20s linear infinite;
   padding: 24px 0px;
@@ -158,14 +153,12 @@ img {
 }
 
 .slider-element {
-  align-items: center;
   gap: 12px;
 }
 
 .slider-element-title {
   color: #6d7373;
   font-size: 22px;
-  font-style: normal;
   font-weight: 500;
   line-height: 20px;
   width: 100%;
@@ -183,7 +176,7 @@ img {
 .image-slider-title {
   color: #fff;
   font-size: 28px;
-  font-style: normal;
+
   font-weight: 400;
   line-height: 32px;
   position: absolute;
@@ -208,19 +201,16 @@ img {
   left: 45%;
   background: var(--White, #f4f5f5);
   border-radius: 99999px;
-  align-items: center;
   gap: 5px;
   padding: 54px 20px;
 }
 .middle-button-text {
   color: var(--TextColor-1, #303635);
-  font-family: Inter;
   font-size: 20px;
-  font-style: normal;
   font-weight: 400;
   line-height: 32px;
 }
-.middle-button > button {
+.middle-button-design {
   background: none;
   border: none;
 }
@@ -235,7 +225,7 @@ img {
   color: #303635;
   text-align: center;
   font-size: 48px;
-  font-style: normal;
+
   font-weight: 500;
   line-height: 130%;
   margin-bottom: 48px;
@@ -243,7 +233,6 @@ img {
 
 .collection-holder {
   justify-content: center;
-  align-items: center;
   margin-bottom: 48px;
 }
 
@@ -255,7 +244,7 @@ img {
   color: #00494a;
   text-align: center;
   font-size: 18px;
-  font-style: normal;
+
   font-weight: 400;
   line-height: 32px;
   padding: 0px 5px;
@@ -275,7 +264,6 @@ img {
 .card-title {
   color: var(--TextColor-1, #303635);
   font-size: 20px;
-  font-style: normal;
   font-weight: 700;
   line-height: 29px; /* 145% */
   margin-top: 20px;
@@ -285,17 +273,84 @@ img {
 .collection-all {
   gap: 10px;
   justify-content: center;
-  align-items: center;
 }
 .collection-all-p {
   color: #00494a;
   text-align: center;
-  font-family: Inter;
   font-size: 18px;
-  font-style: normal;
   font-weight: 400;
   line-height: 32px;
   text-decoration-line: underline;
+}
+/* future section css starts */
+.future-section {
+  padding: 150px 0px;
+  gap: 54px;
+}
+.future-section-left {
+  justify-content: space-between;
+  width: 100%;
+  gap: 95px;
+}
+.future-title {
+  color: #fff;
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 140%;
+  margin-bottom: 32px;
+}
+.future-dsc {
+  color: #f7f8f7;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 32px;
+  margin-bottom: 24px;
+}
+.read-more {
+  color: #fff;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 32px;
+  text-decoration-line: underline;
+  padding-right: 8px;
+}
+.future-counter {
+  background: #f7f8f7;
+  padding: 48px 56px;
+}
+.counter-title {
+  color: #00494a;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 40px; /* 166.667% */
+  margin-bottom: 24px;
+}
+.counter-number {
+  color: #00494a;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 56px; /* 140% */
+}
+.future-section-right {
+  position: relative;
+  background-repeat: no-repeat;
+  background-image: url("../image/future-img.png");
+  width: 100%;
+  background-size: cover;
+  margin-bottom: 2px;
+}
+.future-wave-svg {
+  bottom: 0px;
+}
+
+.test-div {
+  width: 25px;
+  height: 100%;
+  background: #00494a;
+  bottom: -1px;
+  right: 39%;
 }
 
 /* why section */
@@ -307,7 +362,6 @@ img {
   color: #303635;
   text-align: center;
   font-size: 48px;
-  font-style: normal;
   font-weight: 500;
   line-height: 130%;
   margin-bottom: 88px;
@@ -317,34 +371,23 @@ img {
 }
 .why-element {
   flex-direction: column;
-  align-items: center;
   justify-content: center;
   gap: 40px;
 }
-
 .why-container-title {
   color: var(--TextColor-1, #303635);
   text-align: center;
-
   font-size: 24px;
-  font-style: normal;
   font-weight: 400;
   line-height: 32px;
 }
-
 .why-container-dsc {
   color: var(--ParagraphColor-1, #495050);
   text-align: center;
-  font-family: Inter;
   font-size: 18px;
-  font-style: normal;
   font-weight: 400;
   line-height: 28px;
   margin-top: 14px;
-}
-
-.why-img {
-  width: fit-content;
 }
 /* why image css ends */
 
@@ -354,25 +397,50 @@ img {
   margin-top: 109px;
   margin-bottom: 104px;
   padding: 99px 0px;
+  position: relative;
 }
 .instant-qoute-title {
   color: var(--White, #f4f5f5);
   text-align: center;
   font-size: 56px;
-  font-style: normal;
   font-weight: 600;
   line-height: 130%;
 }
 .instant-qoute-dsc {
   color: #f7f8f7;
   text-align: center;
-  font-family: Inter;
   font-size: 20px;
-  font-style: normal;
+
   font-weight: 400;
   line-height: 32px;
   margin-top: 32px;
   margin-bottom: 56px;
+}
+.quote-button-container {
+  justify-content: center;
+  gap: 40px;
+}
+.button-see-all {
+  text-decoration: none;
+  padding: 12px 24px;
+  background: none;
+  border: white 1px solid;
+  color: white;
+}
+.button-talk {
+  text-decoration: none;
+  border: none;
+  padding: 12px 36px;
+}
+.star-svg {
+  right: 8%;
+}
+.duo-star-svg {
+  top: 12%;
+  left: 5%;
+}
+.instant-quote-big-svg {
+  bottom: 0px;
 }
 /* footer */
 
@@ -390,7 +458,7 @@ img {
 }
 .footer-top {
   justify-content: space-between;
-  gap: 136px;
+  gap: 186px;
   padding-bottom: 56px;
   border-bottom: 1px solid var(--TextColor-3, #9c9e9e);
 }
@@ -398,7 +466,7 @@ img {
   color: var(--TextColor-2, #5a5e5e);
   font-family: Inter;
   font-size: 18px;
-  font-style: normal;
+
   font-weight: 400;
   line-height: 28px;
   width: 363.243px;
@@ -415,9 +483,11 @@ img {
   gap: 16px;
   width: max-content;
 }
+.footer-top-left {
+  gap: 136px;
+}
 .footer-middle {
   gap: 128px;
-  padding-right: 60px;
 }
 
 .footer-end {
@@ -427,20 +497,16 @@ img {
 .footer-end-title {
   color: #303635;
   font-size: 32px;
-  font-style: normal;
   font-weight: 500;
   line-height: 46px;
 }
 .footer-button {
   color: #fff;
-  font-family: Inter;
   font-size: 16px;
-  font-style: normal;
   font-weight: 500;
   line-height: 32px;
   padding: 12px 36px;
   justify-content: center;
-  align-items: center;
   gap: 10px;
   background: #00494a;
   border: none;
@@ -466,5 +532,14 @@ img {
   }
   100% {
     transform: translateX(-100%);
+  }
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
   }
 }
