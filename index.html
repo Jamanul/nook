@@ -35,12 +35,13 @@
       </nav>
     </header>
     <main>
-      <section class="hero primary-bg">
-        <h1 class="hero-title">
+      <!-- hero section starts  -->
+      <section class="hero primary-bg relative">
+        <h1 class="hero-title vector-container text-center">
           Make your environment
           <span class="block-span"> minimalistic and futuristic</span>
         </h1>
-        <p class="hero-description inter">
+        <p class="hero-description vector-container inter text-center">
           Transform your closets into functional works of art
           <span class="block-span"
             >with closet creations custom design solutions.</span
@@ -62,7 +63,8 @@
             />
           </svg>
         </div>
-        <div class="hero-image-container flex vector-container justify-center">
+        <!-- hero-image-container div-->
+        <div class="hero-image-container relative flex vector-container justify-center">
           <div>
             <img src="./assets/image/hero-left.png" alt="table" />
             <div class="hero-img-title-container flex">
@@ -86,12 +88,12 @@
               </svg>
             </div>
           </div>
-          <div class="middle-image-div">
-            <div class="hero-vector flex items-center justify-center">
+          <div class="middle-image-div"> 
+            <div class="hero-vector flex items-center justify-center absolute">
               <img
                 class="vector-img"
                 src="./assets/image/herovactor.png"
-                alt=""
+                alt="logo"
               />
             </div>
             <img src="./assets/image/hero-middle.png" alt="table" />
@@ -120,6 +122,7 @@
             </div>
           </div>
         </div>
+        <!-- infinite left to right slider -->
         <div class="slider-conatiner">
           <div class="slider flex">
             <div class="slider-element flex items-center">
@@ -168,53 +171,58 @@
         </div>
       </section>
       <!-- image slider section -->
-      <section class="image-slider ">
+      <section class="image-slider relative">
         <!-- image cotaienr of slider -->
         <div class="flex vector-container image-slider-container">
           <div class="image-slider-portions">
-            <span>
-              <div class="image-slider-element">
-                <img src="./assets/image/slider 1.png" alt="sofa" />
-                <p class="image-slider-title">Sofa</p>
-              </div>
-            </span>
-            <span><div class="image-slider-element">
-              <img src="./assets/image/slider 2.png" alt="Chairs" />
+            <div class="relative">
+              <img class="image-slider-gradient" src="./assets/image/slider 1.png" alt="sofa" />
+              <p class="image-slider-title">Sofa</p>
+            </div>
+        
+            <div class="relative">
+              <img class="image-slider-gradient" src="./assets/image/slider 2.png" alt="Chairs" />
               <p class="image-slider-title">Chairs</p>
-            </div></span>
-            <span><div class="image-slider-element">
-              <img src="./assets/image/slider 3.png" alt="accessories" />
+            </div>
+        
+            <div class="relative">
+              <img class="image-slider-gradient" src="./assets/image/slider 3.png" alt="accessories" />
               <p class="image-slider-title">Accessories</p>
-            </div> </span>
-            <span><div class="image-slider-element">
-              <img src="./assets/image/slider 4.png" alt="table" />
+            </div>
+        
+            <div class="relative">
+              <img class="image-slider-gradient" src="./assets/image/slider 4.png" alt="table" />
               <p class="image-slider-title">Table</p>
-            </div> </span>
-           </div>
-           <div class="image-slider-portions">
-           
-            <span><div class="image-slider-element">
-              <img src="./assets/image/slider 2.png" alt="Chairs" />
+            </div>
+          </div>
+        
+          <div class="image-slider-portions">
+            <div class="relative">
+              <img class="image-slider-gradient" src="./assets/image/slider 2.png" alt="Chairs" />
               <p class="image-slider-title">Chairs</p>
-            </div></span>
-            <span>
-              <div class="image-slider-element">
-                <img src="./assets/image/slider 1.png" alt="sofa" />
-                <p class="image-slider-title">Sofa</p>
-              </div>
-            </span>
-          
-            <span><div class="image-slider-element">
-              <img src="./assets/image/slider 4.png" alt="table" />
+            </div>
+        
+            <div class="relative">
+              <img class="image-slider-gradient" src="./assets/image/slider 1.png" alt="sofa" />
+              <p class="image-slider-title">Sofa</p>
+            </div>
+        
+            <div class="relative">
+              <img class="image-slider-gradient" src="./assets/image/slider 4.png" alt="table" />
               <p class="image-slider-title">Table</p>
-            </div> </span>
-            <span><div class="image-slider-element">
-              <img src="./assets/image/slider 3.png" alt="accessories" />
+            </div>
+        
+            <div class="relative">
+              <img class="image-slider-gradient" src="./assets/image/slider 3.png" alt="accessories" />
               <p class="image-slider-title">Accessories</p>
-            </div> </span>
-           </div>
+            </div>
+          </div>
         </div>
+        
         <!-- middle button of slider -->
+        <!-- <div class="absolute flex middle-button-container vector-container justify-center items-center">
+        
+        </div> -->
         <div class="middle-button flex items-center">
           <button id="backbtn" class="middle-button-design">
             <img
@@ -235,20 +243,20 @@
       </section>
       <!-- catogories -->
       <section class="popular-collection vector-container">
-        <h1 class="popular-collection-title">Popular Collection</h1>
+        <h1 class="popular-collection-title text-center">Popular Collection</h1>
         <div class="collection-holder flex items-center justify-center">
           <div class="collection-container flex">
-            <button id="sofa" onclick="filter('sofa')" class="collection-title active">Sofa</button>
-            <button id="table" onclick="filter('table')" class="collection-title">Table</button>
-            <button id="chair" onclick="filter('chair')" class="collection-title">Chair</button>
-            <button id="accessories" onclick="filter('accessories')" class="collection-title">Accessories</button>
+            <button id="sofa" onclick="filter('sofa')" class="collection-title relative active text-center">Sofa</button>
+            <button id="table" onclick="filter('table')" class="collection-title relative text-center">Table</button>
+            <button id="chair" onclick="filter('chair')" class="collection-title relative text-center">Chair</button>
+            <button id="accessories" onclick="filter('accessories')" class="collection-title relative text-center">Accessories</button>
           </div>
         </div>
         <div id="filteredDataConatiner" class="collection-card-conatiner">
          
         </div>
         <div id="allBtn" class="collection-all justify-center flex items-center">
-          <button onclick="filter('all')" class="collection-all-p transparent inter">See all Collection</button>
+          <button onclick="filter('all')" class="collection-all-p transparent inter text-center">See all Collection</button>
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="25"
@@ -323,39 +331,39 @@
       <!-- why us section starts-->
       <section class="primary-bg">
         <div class="why-us vector-container">
-          <h2 class="why-title">Why us?</h2>
+          <h2 class="why-title text-center">Why us?</h2>
           <div class="why-container flex">
             <div class="why-element items-center flex justify-center flex-column">
-              <div>
+              <div class="resposive-why-img-width">
                 <img src="./assets/icons/why-3.svg" alt="phone" />
               </div>
               <div>
-                <h6 class="why-container-title">24/7 Support</h6>
-                <p class="why-container-dsc inter">
+                <h6 class="why-container-title text-center">24/7 Support</h6>
+                <p class="why-container-dsc inter text-center">
                   Excepteur sint occaecat cupidatat non proident, sunt in culpa
                   qui officia deserunt mollit.
                 </p>
               </div>
             </div>
             <div class="why-element items-center flex justify-center flex-column">
-              <div>
+              <div class="resposive-why-img-width">
                 <img src="./assets/icons/why-2.svg" alt="Shipping" />
               </div>
               <div>
-                <h6 class="why-container-title">Free Shipping</h6>
-                <p class="why-container-dsc inter">
+                <h6 class="why-container-title text-center">Free Shipping</h6>
+                <p class="why-container-dsc inter text-center">
                   Excepteur sint occaecat cupidatat non proident, sunt in culpa
                   qui officia deserunt mollit.
                 </p>
               </div>
             </div>
             <div class="why-element items-center flex justify-center flex-column">
-              <div>
+              <div class="resposive-why-img-width">
                 <img src="./assets/icons/why-3.svg" alt="phone" />
               </div>
               <div>
-                <h6 class="why-container-title">24/7 Support</h6>
-                <p class="why-container-dsc inter">
+                <h6 class="why-container-title text-center">24/7 Support</h6>
+                <p class="why-container-dsc inter text-center">
                   Excepteur sint occaecat cupidatat non proident, sunt in culpa
                   qui officia deserunt mollit.
                 </p>
@@ -366,19 +374,19 @@
       </section>
       <!-- why us section ends -->
       <!-- instant qoute start-->
-      <section class="instant-qoute vector-container">
-        <h1 class="instant-qoute-title">
+      <section class="instant-qoute relative vector-container">
+        <h1 class="instant-qoute-title text-center">
           Get an instant quote for
           <span class="block-span">your new office setup!</span>
         </h1>
-        <p class="instant-qoute-dsc inter">
+        <p class="instant-qoute-dsc inter text-center">
           Do l have consant to record this meeting gain traction, review, nor
           game-plan.
         </p>
         <div class="flex quote-button-container items-center justify-center">
           <button
             type="button"
-            class="collection-all justify-center flex button-talk collection-all-p inter"
+            class="collection-all resposive-width justify-center flex button-talk collection-all-p text-center items-center inter"
           >
             <img
               class="inherit-width"
@@ -388,7 +396,7 @@
           </button>
           <button
             type="button"
-            class="collection-all justify-center flex button-see-all collection-all-p inter"
+            class="collection-all resposive-width justify-center flex button-see-all collection-all-p text-center items-center inter"
           >
             See all Collection
             <img
