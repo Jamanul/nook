@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -26,6 +26,7 @@
             <img src="./assets/icons/nav-svg-2.svg" alt="nav" class="inherit-width">
             <img src="./assets/icons/nav-svg-1.svg" alt="nav" class="inherit-width">
           </div>
+          <!-- nav icons -->
           <div class="nav-end items-center flex">
             <img class="inherit-width" src="./assets/icons/person.svg" alt="person">
             <img class="inherit-width" src="./assets/icons/heart.svg" alt="heart">
@@ -128,51 +129,52 @@
             <div class="slider-element flex items-center">
               <p class="slider-element-title">Woak Table</p>
               <div>
-                <img src="./assets/icons/Subtract.svg" alt="star" />
+                <img class="inherit-width" src="./assets/icons/Subtract.svg" alt="star" />
               </div>
             </div>
             <div class="slider-element flex items-center">
               <p class="slider-element-title">Woak Table</p>
               <div>
-                <img src="./assets/icons/Subtract.svg" alt="star" />
+                <img class="inherit-width" src="./assets/icons/Subtract.svg" alt="star" />
               </div>
             </div>
             <div class="slider-element flex items-center">
               <p class="slider-element-title">Organic Fabric</p>
               <div>
-                <img src="./assets/icons/Subtract.svg" alt="star" />
+                <img class="inherit-width" src="./assets/icons/Subtract.svg" alt="star" />
               </div>
             </div>
             <div class="slider-element flex items-center">
               <p class="slider-element-title">Vintage Metal</p>
               <div>
-                <img src="./assets/icons/Subtract.svg" alt="star" />
+                <img class="inherit-width" src="./assets/icons/Subtract.svg" alt="star" />
               </div>
             </div>
             <div class="slider-element flex items-center">
               <p class="slider-element-title">Modern Chair</p>
               <div>
-                <img src="./assets/icons/Subtract.svg" alt="star" />
+                <img class="inherit-width" src="./assets/icons/Subtract.svg" alt="star" />
               </div>
             </div>
             <div class="slider-element flex items-center">
               <p class="slider-element-title">Mapple Shelf</p>
               <div>
-                <img src="./assets/icons/Subtract.svg" alt="star" />
+                <img class="inherit-width" src="./assets/icons/Subtract.svg" alt="star" />
               </div>
             </div>
             <div class="slider-element flex items-center">
               <p class="slider-element-title">Mapple Shelf</p>
               <div>
-                <img src="./assets/icons/Subtract.svg" alt="star" />
+                <img class="inherit-width" src="./assets/icons/Subtract.svg" alt="star" />
               </div>
             </div>
           </div>
         </div>
       </section>
+      <!-- hero section ends here -->
       <!-- image slider section -->
       <section class="image-slider relative">
-        <!-- image cotaienr of slider -->
+        <!-- image cotainer of slider -->
         <div class="flex vector-container image-slider-container">
           <div class="image-slider-portions">
             <div class="relative">
@@ -220,15 +222,12 @@
         </div>
         
         <!-- middle button of slider -->
-        <!-- <div class="absolute flex middle-button-container vector-container justify-center items-center">
-        
-        </div> -->
         <div class="middle-button flex items-center">
           <button id="backbtn" class="middle-button-design">
             <img
               class="inherit-width"
               src="./assets/icons/chevron-left.svg"
-              alt=""
+              alt="left"
             />
           </button>
           <p class="middle-button-text inter">Scroll</p>
@@ -236,14 +235,16 @@
             <img
               class="inherit-width"
               src="./assets/icons/chevron-right.svg"
-              alt=""
+              alt="right"
             />
           </button>
         </div>
       </section>
-      <!-- catogories -->
+      <!-- image slider ends here -->
+      <!-- catogories section starts here-->
       <section class="popular-collection vector-container">
         <h1 class="popular-collection-title text-center">Popular Collection</h1>
+        <!-- button to filter by category -->
         <div class="collection-holder flex items-center justify-center">
           <div class="collection-container flex">
             <button id="sofa" onclick="filter('sofa')" class="collection-title relative active text-center">Sofa</button>
@@ -252,9 +253,10 @@
             <button id="accessories" onclick="filter('accessories')" class="collection-title relative text-center">Accessories</button>
           </div>
         </div>
-        <div id="filteredDataConatiner" class="collection-card-conatiner">
-         
+        <!-- dynamic data will append here by getting filtered -->
+        <div id="filteredDataConatiner" class="collection-card-conatiner">       
         </div>
+        <!-- A button to show all the data -->
         <div id="allBtn" class="collection-all justify-center flex items-center">
           <button onclick="filter('all')" class="collection-all-p transparent inter text-center">See all Collection</button>
           <svg
@@ -281,6 +283,7 @@
           </svg>
         </div>
       </section>
+      <!-- category section ends here -->
       <!-- future section starts-->
       <section id="counter-section" class="secondary-bg relative ">
         <div class="vector-container flex future-section">
@@ -296,10 +299,11 @@
                 <img
                   class="inherit-width"
                   src="./assets/icons/arrow-up-right.svg"
-                  alt=""
+                  alt="arrow"
                 />
               </div>
             </div>
+            <!-- Counter section. It will start the count when we enter this div. -->
             <div class="future-counter flex justify-between relative">
               <div class="z-index-100">
                 <p class="inter counter-title">Furniture</p>
@@ -317,12 +321,13 @@
               <img class="absolute future-wave-svg top-0" src="./assets/icons/small-top-wave.svg" alt="">
             </div>
           </div>
+          <!-- Future section image div -->
           <div class="future-section-right relative">
             <div>
             </div>
             <div class="green-line absolute"></div>
             <div class="green-box absolute"></div>
-            <img class="absolute inherit-width future-logo" src="./assets/image/Group 20.png" alt="">
+            <img class="absolute inherit-width future-logo" src="./assets/image/Group 20.png" alt="logo">
           </div>
         </div>
         <img class="absolute future-wave-svg svg-holder" src="./assets/icons/wave.svg" alt="">
@@ -373,7 +378,7 @@
         </div>
       </section>
       <!-- why us section ends -->
-      <!-- instant qoute start-->
+      <!-- instant qoute section start-->
       <section class="instant-qoute relative vector-container">
         <h1 class="instant-qoute-title text-center">
           Get an instant quote for
@@ -431,6 +436,7 @@
           />
         </svg>
       </section>
+      <!-- instant qoute section ends -->
     </main>
     <footer class="primary-bg footer">
       <div class="vector-container">
@@ -493,7 +499,7 @@
                 <img
                   class="inherit-width"
                   src="./assets/icons/phone.svg"
-                  alt=""
+                  alt="phone"
                 />
                 Let's Talk
               </button>
