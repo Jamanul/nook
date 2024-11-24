@@ -37,9 +37,15 @@ body {
 .hidden {
   display: none;
 }
+.cursor-pointer {
+  cursor: pointer;
+}
 * {
   margin: 0px;
   padding: 0px;
+}
+li {
+  cursor: pointer;
 }
 img {
   width: 100%;
@@ -113,7 +119,7 @@ img {
   transform: translateY(14%);
 }
 .hero-vector {
-  top: -19.5%;
+  top: -20.5%;
   width: 100%;
 }
 .vector-img {
@@ -130,7 +136,7 @@ img {
 .hero-img-title-container {
   justify-content: space-between;
   margin-top: 20px;
-  padding-bottom: 56px;
+  padding-bottom: 42px;
 }
 .svg-hero-img {
   padding: 5.6px;
@@ -146,15 +152,21 @@ img {
 .slider-conatiner {
   background: #fff;
   border-bottom: 1px solid #6d7373;
+  white-space:nowrap;
+  overflow: hidden;
+  width: 100%;
+  gap: 12px;
+  position: relative;
 }
 .slider {
-  animation: slide 20s linear infinite;
+  animation: slide 20s infinite linear;
   padding: 24px 0px;
   gap: 12px;
+  display: inline-flex;
 }
 .slider-element {
   gap: 12px;
-  white-space: nowrap;
+  white-space:nowrap;
 }
 .slider-element-title {
   color: #6d7373;
@@ -263,7 +275,7 @@ img {
   position: absolute;
   bottom: 0;
   left: 0;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.8s ease;
 }
 
 .active::after {
@@ -290,6 +302,7 @@ img {
 }
 .collection-all {
   gap: 10px;
+  z-index: 1;
 }
 .collection-all-p {
   color: #00494a;
@@ -542,7 +555,7 @@ img {
 }
 @keyframes slide {
   0% {
-    transform: translateX(100%);
+    transform: translateX(0);
   }
   100% {
     transform: translateX(-100%);
